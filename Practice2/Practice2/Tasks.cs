@@ -34,17 +34,13 @@ namespace Practice2
             //
             // => x * (t - t2) + v * t2 = h => 
             // => t2 = (h - x * t) / (v - x)
-
             var t2 = (h - x * t) / (v - x);
             var t1 = t - t2;
             var tMin = Math.Min(t2, t1);
-
-
             // V * tMax = h
             // tMax = h / V
             // x < V < v
             // tMax <= t
-            
             for (int tMax = t; tMax >= 1; tMax--)
             {
                 double V = h / tMax;
@@ -55,6 +51,7 @@ namespace Practice2
             }
             return new int[] { tMin, 0 };
         }
+        
         public static double Task4(double r, double a)
         {
             var squareDiagonal = a * Math.Pow(2, 0.5);
