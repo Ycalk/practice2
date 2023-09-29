@@ -6,7 +6,6 @@ namespace Practice2
     {
         static void Main(string[] args)
         {
-            Tasks.Task3(10_000, 500, 50, 10);
         }
     }
 }
